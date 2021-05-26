@@ -46,6 +46,7 @@ import qualified PlutusTx
 import qualified PlutusTx.AssocMap           as AMap
 import qualified PlutusTx.AssocMap           as AssocMap
 import qualified PlutusTx.Builtins           as Builtins
+import qualified PlutusTx.ByteString         as PlutusTx
 import qualified PlutusTx.Prelude            as PlutusTx
 import           Test.Tasty                  hiding (after)
 import           Test.Tasty.HUnit            (testCase)
@@ -199,14 +200,14 @@ jsonRoundTrip gen = property $ do
 
 ledgerBytesShowFromHexProp :: Property
 ledgerBytesShowFromHexProp = property $ do
-    bts <- forAll $ LedgerBytes <$> Gen.genSizedByteString 32
+    bts <- forAll $ LedgerBytes . PlutusTx.fromHaskellByteString <$> Gen.genSizedByteString 32
     let result = Bytes.fromHex $ fromString $ show bts
 
     Hedgehog.assert $ result == Right bts
 
 ledgerBytesToJSONProp :: Property
 ledgerBytesToJSONProp = property $ do
-    bts <- forAll $ LedgerBytes <$> Gen.genSizedByteString 32
+    bts <- forAll $ LedgerBytes . PlutusTx.fromHaskellByteString <$> Gen.genSizedByteString 32
     let enc    = JSON.toJSON bts
         result = Aeson.iparse JSON.parseJSON enc
 
@@ -225,6 +226,21 @@ byteStringJson jsonString value =
     , testCase "encoding" $ HUnit.assertEqual "Simple Encode" jsonString (JSON.encode value)
     ]
 
+<<<<<<< HEAD
+=======
+-- | Check that the on-chain version and the off-chain version of 'pubKeyHash'
+--   match.
+pubkeyHashOnChainAndOffChain :: Property
+pubkeyHashOnChainAndOffChain = property $ do
+    pk <- forAll $ PubKey . LedgerBytes . PlutusTx.fromHaskellByteString <$> Gen.genSizedByteString 32 -- this won't generate a valid public key but that doesn't matter for the purposes of pubKeyHash
+    let offChainHash = Crypto.pubKeyHash pk
+        onchainProg :: CompiledCode (PubKey -> PubKeyHash -> ())
+        onchainProg = $$(PlutusTx.compile [|| \pk expected -> if expected PlutusTx.== Validation.pubKeyHash pk then PlutusTx.trace "correct" () else PlutusTx.traceError "not correct" ||])
+        script = Scripts.fromCompiledCode $ onchainProg `applyCode` liftCode pk `applyCode` liftCode offChainHash
+        result = runExcept $ evaluateScript script
+    result Hedgehog.=== Right ["correct"]
+
+>>>>>>> Add opaque ByteString type to support literal ByteStrings.
 -- | Check that 'missingValueSpent' is the smallest value needed to
 --   meet the requirements.
 missingValueSpentProp :: Property

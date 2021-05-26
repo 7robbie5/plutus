@@ -10,7 +10,7 @@
 {-# OPTIONS_GHC -fno-omit-interface-pragmas #-}
 module PlutusTx.IsData.Class where
 
-import           Data.ByteString            as BS
+import Data.ByteString      as BS
 
 import           Prelude                    (Int, Integer, Maybe (..), error)
 
@@ -88,6 +88,10 @@ instance FromData ByteString where
 instance UnsafeFromData ByteString where
     {-# INLINABLE unsafeFromBuiltinData #-}
     unsafeFromBuiltinData = BI.unsafeDataAsB
+
+deriving instance ToData Builtins.BuiltinByteString
+deriving instance FromData Builtins.BuiltinByteString
+deriving instance UnsafeFromData Builtins.BuiltinByteString
 
 instance ToData a => ToData [a] where
     {-# INLINABLE toBuiltinData #-}

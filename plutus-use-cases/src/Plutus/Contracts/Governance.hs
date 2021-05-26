@@ -59,7 +59,7 @@ import qualified Prelude                      as Haskell
 
 -- | The paramaters for the proposal contract.
 data Proposal = Proposal
-    { newLaw         :: ByteString
+    { newLaw         :: BuiltinByteString
     -- ^ The new contents of the law
     , tokenName      :: TokenName
     -- ^ The name of the voting tokens. Only voting token owners are allowed to propose changes.
@@ -77,7 +77,7 @@ data Voting = Voting
     deriving anyclass (ToJSON, FromJSON)
 
 data GovState = GovState
-    { law    :: ByteString
+    { law    :: BuiltinByteString
     , mph    :: MintingPolicyHash
     , voting :: Maybe Voting
     }
@@ -97,7 +97,7 @@ data GovInput
 -- * @new-law@ to create a new law and distribute voting tokens
 -- * @add-vote@ to vote on a proposal with the name of the voting token and a boolean to vote in favor or against.
 type Schema =
-    Endpoint "new-law" ByteString
+    Endpoint "new-law" BuiltinByteString
         .\/ Endpoint "add-vote" (TokenName, Bool)
 
 -- | The governace contract parameters.

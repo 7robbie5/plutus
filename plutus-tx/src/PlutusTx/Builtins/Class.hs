@@ -76,10 +76,10 @@ instance ToBuiltin () BuiltinUnit where
     {-# INLINABLE toBuiltin #-}
     toBuiltin x = case x of () -> unitval
 
-instance FromBuiltin BuiltinByteString ByteString where
+instance FromBuiltin ByteString ByteString where
     {-# INLINABLE fromBuiltin #-}
     fromBuiltin = id
-instance ToBuiltin ByteString BuiltinByteString where
+instance ToBuiltin ByteString ByteString where
     {-# INLINABLE toBuiltin #-}
     toBuiltin = id
 
@@ -128,6 +128,19 @@ instance FromBuiltin BuiltinString BuiltinString where
 instance ToBuiltin BuiltinString BuiltinString where
     {-# INLINABLE toBuiltin #-}
     toBuiltin = id
+
+{- Same noinline hack as with `String` type. -}
+instance IsString BuiltinByteString where
+    -- Try and make sure the dictionary selector goes away, it's simpler to match on
+    -- the application of 'stringToBuiltinByteString'
+    {-# INLINE fromString #-}
+    -- See Note [noinline hack]
+    fromString = Magic.noinline stringToBuiltinByteString
+
+{-# INLINABLE stringToBuiltinByteString #-}
+stringToBuiltinByteString :: String -> BuiltinByteString
+stringToBuiltinByteString = encodeUtf8 . stringToBuiltinString
+
 
 {- Note [From/ToBuiltin instances for polymorphic builtin types]
 For various technical reasons

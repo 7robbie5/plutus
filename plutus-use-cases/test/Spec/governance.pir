@@ -77,7 +77,8 @@
         (termbind
           (strict)
           (vardecl
-            fToDataByteString_ctoBuiltinData (fun (con bytestring) (con data))
+            fToDataBuiltinByteString_ctoBuiltinData
+            (fun (con bytestring) (con data))
           )
           (lam b (con bytestring) [ (builtin bData) b ])
         )
@@ -323,7 +324,7 @@
                                   { fToDataMap_ctoBuiltinData (con bytestring) }
                                   Bool
                                 }
-                                fToDataByteString_ctoBuiltinData
+                                fToDataBuiltinByteString_ctoBuiltinData
                               ]
                               fToDataBool_ctoBuiltinData
                             ]
@@ -6150,6 +6151,13 @@
                         (strict)
                         (vardecl absurd (all a (type) (fun Void a)))
                         (abs a (type) (lam a Void { [ Void_match a ] a }))
+                      )
+                      (termbind
+                        (strict)
+                        (vardecl
+                          fToDataVoid_ctoBuiltinData (fun Void (con data))
+                        )
+                        (lam v Void [ { absurd (con data) } v ])
                       )
                       (datatypebind
                         (datatype
@@ -14353,10 +14361,7 @@
                                                                                                     }
                                                                                                     Void
                                                                                                   }
-                                                                                                  {
-                                                                                                    absurd
-                                                                                                    (con data)
-                                                                                                  }
+                                                                                                  fToDataVoid_ctoBuiltinData
                                                                                                 ]
                                                                                                 newConstraints
                                                                                               ]
