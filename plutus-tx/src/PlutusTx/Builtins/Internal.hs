@@ -1,6 +1,6 @@
 {-# LANGUAGE DerivingStrategies #-}
+{-# LANGUAGE DerivingVia        #-}
 {-# LANGUAGE TypeApplications   #-}
-{-# LANGUAGE DerivingVia #-}
 -- This ensures that we don't put *anything* about these functions into the interface
 -- file, otherwise GHC can be clever about the ones that are always error, even though
 -- they're NOINLINE!
@@ -12,20 +12,20 @@
 module PlutusTx.Builtins.Internal where
 
 import           Codec.Serialise
-import           Control.DeepSeq       (NFData)
+import           Control.DeepSeq           (NFData)
 import qualified Crypto
-import qualified Data.ByteArray        as BA
-import           Data.ByteString       as BS
-import           Data.ByteString.Char8 as Char8
-import qualified Data.ByteString.Hash  as Hash
+import qualified Data.ByteArray            as BA
+import           Data.ByteString           as BS
+import           Data.ByteString.Char8     as Char8
+import qualified Data.ByteString.Hash      as Hash
 import           Data.Coerce
-import           Data.Maybe           (fromMaybe)
-import           Data.Text.Prettyprint.Doc   (Pretty(..), viaShow)
-import qualified PlutusCore.Data      as PLC
-import           Data.Hashable         (Hashable)
-import           GHC.Generics          (Generic)
+import           Data.Hashable             (Hashable)
+import           Data.Maybe                (fromMaybe)
+import           Data.Text.Prettyprint.Doc (Pretty (..), viaShow)
+import           GHC.Generics              (Generic)
+import qualified PlutusCore.Data           as PLC
 import           PlutusTx.Utils
-import           Prelude               as Haskell
+import           Prelude                   as Haskell
 
 {- Note [Builtin name definitions]
 The builtins here have definitions so they can be used in off-chain code too.

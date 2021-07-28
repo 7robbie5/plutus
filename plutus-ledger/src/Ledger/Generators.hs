@@ -31,8 +31,8 @@ module Ledger.Generators(
     ) where
 
 import           Data.Bifunctor            (Bifunctor (..))
-import           Data.Default              (Default (def))
 import qualified Data.ByteString           as BS
+import           Data.Default              (Default (def))
 import           Data.Foldable             (fold, foldl')
 import           Data.Map                  (Map)
 import qualified Data.Map                  as Map
@@ -49,7 +49,7 @@ import qualified Ledger.Index              as Index
 import qualified Plutus.V1.Ledger.Ada      as Ada
 import qualified Plutus.V1.Ledger.Interval as Interval
 import qualified Plutus.V1.Ledger.Value    as Value
-import qualified PlutusTx.Prelude       as PlutusTx
+import qualified PlutusTx.Prelude          as PlutusTx
 
 -- | Attach signatures of all known private keys to a transaction.
 signAll :: Tx -> Tx

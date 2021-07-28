@@ -10,7 +10,7 @@
 {-# OPTIONS_GHC -fno-omit-interface-pragmas #-}
 module PlutusTx.IsData.Class where
 
-import Data.ByteString      as BS
+import           Data.ByteString            as BS
 
 import           Prelude                    (Int, Integer, Maybe (..), error)
 

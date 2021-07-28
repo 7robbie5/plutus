@@ -12,15 +12,15 @@ module Plutus.ChainIndex.Types(
     , Tip(..)
     ) where
 
-import           Data.Aeson      (FromJSON, ToJSON)
-import           Data.Default    (Default (..))
-import           Data.Set        (Set)
-import qualified Data.Set        as Set
-import           GHC.Generics    (Generic)
-import           Ledger.Bytes    (LedgerBytes (..))
-import           Ledger.Slot     (Slot)
-import           Numeric.Natural (Natural)
-import qualified PlutusTx.Prelude          as PlutusTx
+import           Data.Aeson       (FromJSON, ToJSON)
+import           Data.Default     (Default (..))
+import           Data.Set         (Set)
+import qualified Data.Set         as Set
+import           GHC.Generics     (Generic)
+import           Ledger.Bytes     (LedgerBytes (..))
+import           Ledger.Slot      (Slot)
+import           Numeric.Natural  (Natural)
+import qualified PlutusTx.Prelude as PlutusTx
 
 -- | Block identifier (usually a hash)
 newtype BlockId = BlockId { getBlockId :: PlutusTx.BuiltinByteString }

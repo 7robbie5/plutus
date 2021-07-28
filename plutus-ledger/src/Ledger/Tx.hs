@@ -30,9 +30,9 @@ import           Data.Text.Prettyprint.Doc (Pretty (pretty), braces, colon, hang
 import           Ledger.Address            (pubKeyAddress, scriptAddress)
 import           Ledger.Crypto             (PrivateKey, PubKey, signTx, toPublicKey)
 import           Ledger.Scripts            (datumHash)
+import           Plutus.V1.Ledger.Api
 import           Plutus.V1.Ledger.Tx       as Export
 import           Plutus.V1.Ledger.Value
-import           Plutus.V1.Ledger.Api
 
 instance Pretty Tx where
     pretty t@Tx{txInputs, txCollateral, txOutputs, txMint, txFee, txValidRange, txSignatures, txMintScripts, txData} =

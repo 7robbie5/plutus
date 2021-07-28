@@ -3,11 +3,11 @@
 
 module Plutus.V1.Ledger.Orphans where
 
-import           Data.Aeson            (FromJSON (parseJSON), ToJSON (toJSON))
-import qualified Data.Aeson            as JSON
-import qualified Data.Aeson.Extras     as JSON
-import qualified Data.ByteString       as BSS
-import qualified PlutusTx.Builtins   as PlutusTx
+import           Data.Aeson        (FromJSON (parseJSON), ToJSON (toJSON))
+import qualified Data.Aeson        as JSON
+import qualified Data.Aeson.Extras as JSON
+import qualified Data.ByteString   as BSS
+import qualified PlutusTx.Builtins as PlutusTx
 
 
 instance ToJSON BSS.ByteString where

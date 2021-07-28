@@ -1,14 +1,14 @@
 {-# OPTIONS_GHC -fno-omit-interface-pragmas #-}
 module PlutusTx.Ord (Ord(..), Ordering(..)) where
 
+import qualified Data.ByteString   as BS
 import qualified PlutusTx.Builtins as Builtins
-import qualified Data.ByteString    as BS
 import           PlutusTx.Eq
 
 import           PlutusCore.Data
 
 import           Prelude           hiding (Eq (..), Ord (..))
-import qualified Prelude            as Haskell
+import qualified Prelude           as Haskell
 
 {- HLINT ignore -}
 

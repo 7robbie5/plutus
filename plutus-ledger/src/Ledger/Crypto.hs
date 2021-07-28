@@ -29,10 +29,10 @@ import           Crypto.Error            (throwCryptoError)
 import qualified Data.ByteArray          as BA
 import qualified Data.ByteString         as BS
 import           Data.Either.Extras      (unsafeFromEither)
+import           Plutus.V1.Ledger.Api
 import qualified Plutus.V1.Ledger.Bytes  as KB
 import           Plutus.V1.Ledger.Crypto as Export
 import           Plutus.V1.Ledger.TxId
-import           Plutus.V1.Ledger.Api
 
 -- | Compute the hash of a public key.
 pubKeyHash :: PubKey -> PubKeyHash

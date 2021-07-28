@@ -54,7 +54,7 @@ import qualified Plutus.V1.Ledger.Api        as Api
 import qualified Plutus.V1.Ledger.Credential as Credential
 import qualified Plutus.V1.Ledger.Value      as Value
 import qualified PlutusCore.Data             as Data
-import qualified PlutusTx.Prelude          as PlutusTx
+import qualified PlutusTx.Prelude            as PlutusTx
 
 fromCardanoTx :: C.Era era => C.Tx era -> Either FromCardanoError P.Tx
 fromCardanoTx (C.Tx (C.TxBody C.TxBodyContent{..}) _keyWitnesses) = do
