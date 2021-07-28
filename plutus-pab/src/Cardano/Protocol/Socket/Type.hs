@@ -51,13 +51,15 @@ import           Ouroboros.Network.Util.ShowProxy
 
 import           Ledger                                             (Block, OnChainTx (..), Tx (..), TxId (..))
 import           Ledger.Bytes                                       (LedgerBytes (..))
-import qualified PlutusTx.ByteString                                as PlutusTx
+import qualified PlutusTx.Prelude                                   as PlutusTx
+
+deriving anyclass instance NoThunks PlutusTx.BuiltinByteString
 
 -- | Tip of the block chain type (used by node protocols).
 type Tip = Block
 
 -- | The node protocols require a block header type.
-newtype BlockId = BlockId { getBlockId :: PlutusTx.ByteString }
+newtype BlockId = BlockId { getBlockId :: PlutusTx.BuiltinByteString }
   deriving (Eq, Ord, Generic)
   deriving anyclass (ToJSON, FromJSON)
   deriving newtype (Serialise, NoThunks)

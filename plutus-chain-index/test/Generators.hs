@@ -43,6 +43,7 @@ import           Ledger.Value                (Value)
 import           Plutus.ChainIndex.Tx        (ChainIndexTx (..))
 import           Plutus.ChainIndex.Types     (BlockId (..), Tip (..))
 import           Plutus.ChainIndex.UtxoState (TxUtxoBalance (..), fromTx)
+import qualified PlutusTx.Prelude            as PlutusTx
 
 -- | Generate a random tx id
 genRandomTxId :: MonadGen m => m TxId
@@ -65,7 +66,7 @@ genTxOutRef :: MonadGen m => m TxOutRef
 genTxOutRef =  TxOutRef <$> genTxId <*> Gen.integral (Range.linear 0 50)
 
 genBlockId :: MonadGen m => m BlockId
-genBlockId = BlockId <$> Gen.bytes (Range.singleton 32)
+genBlockId = BlockId . PlutusTx.fromHaskellByteString <$> Gen.bytes (Range.singleton 32)
 
 genSlot :: MonadGen m => m Slot
 genSlot = Slot <$> Gen.integral (Range.linear 0 100000000)
@@ -92,7 +93,7 @@ genStateTip :: UtxoGenState -> Tip
 genStateTip UtxoGenState{_uxUtxoSet, _uxNumTransactions, _uxNumBlocks} =
     Tip
         { tipSlot    = fromIntegral _uxNumBlocks
-        , tipBlockId = BlockId $ BSL.toStrict $ serialise _uxNumBlocks -- TODO: Incl. hash of utxo set!
+        , tipBlockId = BlockId $ PlutusTx.fromHaskellByteString $ BSL.toStrict $ serialise _uxNumBlocks -- TODO: Incl. hash of utxo set!
         , tipBlockNo = _uxNumBlocks
         }
 

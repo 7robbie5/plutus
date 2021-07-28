@@ -112,7 +112,7 @@ type ChosenNum = Integer
 type SlotInterval = (Slot, Slot)
 type Accounts = Map (AccountId, Token) Integer
 
-newtype ChoiceName = ChoiceName { unChoiceName :: ByteString }
+newtype ChoiceName = ChoiceName { unChoiceName :: BuiltinByteString }
   deriving (IsString, Haskell.Show, Pretty) via TokenName
   deriving stock (Generic)
   deriving newtype (Haskell.Eq, Haskell.Ord, Eq)
@@ -140,7 +140,7 @@ instance Haskell.Show Token where
 {-| Values, as defined using Let ar e identified by name,
     and can be used by 'UseValue' construct.
 -}
-newtype ValueId = ValueId ByteString
+newtype ValueId = ValueId BuiltinByteString
   deriving (IsString, Haskell.Show) via TokenName
   deriving stock (Haskell.Eq,Haskell.Ord,Generic)
   deriving anyclass (Newtype)

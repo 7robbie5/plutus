@@ -61,7 +61,7 @@ import           Network.Wai.Middleware.Cors       (cors, corsRequestHeaders, si
 import           Plutus.V1.Ledger.Value            (CurrencySymbol (..), TokenName (..), Value (..), currencySymbol,
                                                     tokenName)
 import qualified PlutusTx.AssocMap                 as AssocMap
-import qualified PlutusTx.ByteString               as PlutusTx
+import qualified PlutusTx.Prelude                  as PlutusTx
 import           Servant                           (Application, Handler (Handler), Server, ServerError, hoistServer,
                                                     serve, serveDirectoryFileServer, throwError, (:<|>) ((:<|>)), (:>))
 import           Text.Blaze.Html.Renderer.Pretty   (renderHtml)

@@ -15,7 +15,7 @@ import           GHC.Generics            (C, Constructor, D, Generic, K1 (K1), M
 import           Ledger                  (PubKeyHash (..), Slot (..))
 import           Ledger.Ada              (Ada, getLovelace)
 import           Ledger.Value
-import qualified PlutusTx.ByteString     as P
+import qualified PlutusTx.Prelude        as P
 import qualified PlutusTx.Ratio          as P
 import           Text.PrettyPrint.Leijen (Doc, comma, encloseSep, hang, lbracket, line, lparen, parens, rbracket,
                                           rparen, space, text)
@@ -119,7 +119,7 @@ instance Pretty PubKeyHash where
 instance Pretty BS.ByteString where
     prettyFragment = text . show
 
-instance Pretty P.ByteString where
+instance Pretty P.BuiltinByteString where
     prettyFragment = text . show . P.toHaskellByteString
 
 instance Pretty Ada where

@@ -41,11 +41,11 @@ import qualified Prelude               as Haskell
 
 ------------------------------------------------------------
 
-newtype HashedString = HashedString ByteString deriving newtype (PlutusTx.ToData, PlutusTx.FromData, PlutusTx.UnsafeFromData)
+newtype HashedString = HashedString BuiltinByteString deriving newtype (PlutusTx.ToData, PlutusTx.FromData, PlutusTx.UnsafeFromData)
 
 PlutusTx.makeLift ''HashedString
 
-newtype ClearString = ClearString ByteString deriving newtype (PlutusTx.ToData, PlutusTx.FromData, PlutusTx.UnsafeFromData)
+newtype ClearString = ClearString BuiltinByteString deriving newtype (PlutusTx.ToData, PlutusTx.FromData, PlutusTx.UnsafeFromData)
 
 PlutusTx.makeLift ''ClearString
 

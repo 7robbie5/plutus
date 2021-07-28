@@ -2621,11 +2621,6 @@
                     (vardecl absurd (all a (type) (fun Void a)))
                     (abs a (type) (lam a Void { [ Void_match a ] a }))
                   )
-                  (termbind
-                    (strict)
-                    (vardecl fToDataVoid_ctoBuiltinData (fun Void (con data)))
-                    (lam v Void [ { absurd (con data) } v ])
-                  )
                   (datatypebind
                     (datatype
                       (tyvardecl MultiplicativeMonoid (fun (type) (type)))
@@ -10412,7 +10407,10 @@
                                                                                                 }
                                                                                                 Void
                                                                                               }
-                                                                                              fToDataVoid_ctoBuiltinData
+                                                                                              {
+                                                                                                absurd
+                                                                                                (con data)
+                                                                                              }
                                                                                             ]
                                                                                             newConstraints
                                                                                           ]

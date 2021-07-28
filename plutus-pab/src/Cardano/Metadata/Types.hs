@@ -75,7 +75,7 @@ import           Ledger.Crypto                     (PubKey (PubKey), PubKeyHash,
                                                     getPubKeyHash, getSignature)
 import           Plutus.PAB.Arbitrary              ()
 import           Plutus.PAB.Instances              ()
-import qualified PlutusTx.ByteString               as PlutusTx
+import qualified PlutusTx.Prelude                  as PlutusTx
 import           Servant.API                       (FromHttpApiData, ToHttpApiData)
 import           Servant.Client                    (BaseUrl, ClientError)
 import           Test.QuickCheck.Arbitrary.Generic (Arbitrary, arbitrary, genericArbitrary)
@@ -112,7 +112,7 @@ class ToSubject a where
 instance ToSubject BS.ByteString where
     toSubject x = Subject $ encodeByteString x
 
-instance ToSubject PlutusTx.ByteString where
+instance ToSubject PlutusTx.BuiltinByteString where
     toSubject x = Subject $ encodeByteString $ PlutusTx.toHaskellByteString x
 
 instance ToSubject LedgerBytes where
