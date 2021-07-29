@@ -1,5 +1,4 @@
 {-# LANGUAGE DerivingStrategies #-}
-{-# LANGUAGE DerivingVia        #-}
 {-# LANGUAGE TypeApplications   #-}
 -- This ensures that we don't put *anything* about these functions into the interface
 -- file, otherwise GHC can be clever about the ones that are always error, even though
@@ -149,7 +148,7 @@ BYTESTRING
 -}
 
 -- | An opaque type representing Plutus Core ByteStrings.
-newtype BuiltinByteString = BuiltinByteString { unBuiltinByteString :: ByteString }
+newtype BuiltinByteString = BuiltinByteString ByteString
   deriving stock (Generic)
   deriving newtype (Haskell.Show, Haskell.Eq, Haskell.Ord, Haskell.Semigroup, Haskell.Monoid)
   deriving newtype (Hashable, Serialise, NFData, BA.ByteArrayAccess, BA.ByteArray)
@@ -163,7 +162,7 @@ fromHaskellByteString = BuiltinByteString
 
 {-# INLINABLE toHaskellByteString #-}
 toHaskellByteString :: BuiltinByteString -> BS.ByteString
-toHaskellByteString = unBuiltinByteString
+toHaskellByteString (BuiltinByteString b) = b
 
 {-# NOINLINE concatenate #-}
 concatenate :: BuiltinByteString -> BuiltinByteString -> BuiltinByteString

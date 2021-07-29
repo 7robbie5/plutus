@@ -101,48 +101,11 @@ Balances Carried Forward:
     Ada:      Lovelace:  100000000
 
 ==== Slot #1, Tx #0 ====
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-TxId:       7df7d70bdf31f813b75009d43a4dd638b106734e1ace07b99f2622418e9a3a7a
+TxId:       1a973a9eee7d8a49d5e12e1e196844cc2a35ff9575fe5b855de813069b839a34
 Fee:        Ada:      Lovelace:  10
 Mint:       -
 Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840f0e638932cdbd2503f129a31152d6200cb8d...
-=======
-=======
->>>>>>> Fix plutus-use-cases test outputs
-TxId:       435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
-Fee:        Ada:      Lovelace:  10
-Mint:       -
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840ae6965a318c682d98da46cb6d2d60119525b...
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-TxId:       0c1056d7b97bb527b4aa89654defb90965bcf4c0d6ffb72b3f168b0ed6779e0c
-Fee:        Ada:      Lovelace:  10
-Mint:       -
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840d45be05d0d543e0b1191406c641408d341f8...
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-TxId:       5cc7c664675102b4cc9903305db5425084e03888b73518ea67a9214ddc8b909f
-Fee:        Ada:      Lovelace:  10
-Mint:       -
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840cda91e28c83efd66ce2f6aeb182b244ac83f...
->>>>>>> Fix tests in packages
-=======
-TxId:       435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
-Fee:        Ada:      Lovelace:  10
-Mint:       -
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840ae6965a318c682d98da46cb6d2d60119525b...
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+              Signature: 5840e2e898179034577e6a866dd060dcb546d2ad...
 Inputs:
   ---- Input 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
@@ -161,26 +124,7 @@ Outputs:
     Ada:      Lovelace:  99999982
 
   ---- Output 1 ----
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Destination:  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
-=======
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-=======
-  Destination:  Script: 7fb3e84d94d7717d314b8ebb0573557d6c4f47ca6679520b24e9c57e
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-  Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
->>>>>>> Fix tests in packages
-=======
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+  Destination:  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  8
 
@@ -226,212 +170,51 @@ Balances Carried Forward:
   Value:
     Ada:      Lovelace:  100000000
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-=======
-  Script: 7fb3e84d94d7717d314b8ebb0573557d6c4f47ca6679520b24e9c57e
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
->>>>>>> Fix tests in packages
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  8
 
 ==== Slot #2, Tx #0 ====
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-TxId:       9acfbf5be298da6cf06317254d5e0308e6dab2cade4611554a13dd5df3e1a598
-Fee:        Ada:      Lovelace:  15151
-Mint:       bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
+TxId:       29cc2130691984dcafb6b82aa2a0fc29f2d2bbb14dc1b6a9da298e1c5abf7ffb
+Fee:        Ada:      Lovelace:  15175
+Mint:       5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
 Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840eaaedf80f52024ca0b8099490d16241cbd99...
-=======
-=======
->>>>>>> Fix plutus-use-cases test outputs
-TxId:       204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
-Fee:        Ada:      Lovelace:  15151
-Mint:       e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840cbb2f9d93c99535d88b60668e0f8099ef187...
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-TxId:       283afcf057944a8f4f450c0ea57f0484c9e3b23f73d6d8d3d6bbfc1b9d80f282
-Fee:        Ada:      Lovelace:  15131
-Mint:       34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    1
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 58403deaa0bb4e0a88898788ce3f117dc7c8af55...
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-TxId:       24fbbb9ae2f1385c04186e072537af27e3fac4e568a402f68c23a4de062bdca9
-Fee:        Ada:      Lovelace:  15145
-Mint:       0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 58400080c729d552884b49dbce0cf5954dabe1df...
->>>>>>> Fix tests in packages
-=======
-TxId:       204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
-Fee:        Ada:      Lovelace:  15151
-Mint:       e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840cbb2f9d93c99535d88b60668e0f8099ef187...
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+              Signature: 58407002a4a2f2059410167da871c6239266e24c...
 Inputs:
   ---- Input 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
     Ada:      Lovelace:  99999982
   Source:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Tx:     7df7d70bdf31f813b75009d43a4dd638b106734e1ace07b99f2622418e9a3a7a
-=======
-    Tx:     435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-    Tx:     435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
-=======
-    Tx:     0c1056d7b97bb527b4aa89654defb90965bcf4c0d6ffb72b3f168b0ed6779e0c
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Tx:     5cc7c664675102b4cc9903305db5425084e03888b73518ea67a9214ddc8b909f
->>>>>>> Fix tests in packages
-=======
-    Tx:     435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Tx:     1a973a9eee7d8a49d5e12e1e196844cc2a35ff9575fe5b855de813069b839a34
     Output #0
 
 
   ---- Input 1 ----
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Destination:  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
+  Destination:  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  8
   Source:
-    Tx:     7df7d70bdf31f813b75009d43a4dd638b106734e1ace07b99f2622418e9a3a7a
-=======
-=======
->>>>>>> Fix plutus-use-cases test outputs
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-  Value:
-    Ada:      Lovelace:  8
-  Source:
-    Tx:     435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
+    Tx:     1a973a9eee7d8a49d5e12e1e196844cc2a35ff9575fe5b855de813069b839a34
     Output #1
-    Script: 59277a0100003323322333222333222323322323...
-=======
-  Destination:  Script: 7fb3e84d94d7717d314b8ebb0573557d6c4f47ca6679520b24e9c57e
-=======
-  Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
->>>>>>> Fix tests in packages
-=======
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
-  Value:
-    Ada:      Lovelace:  8
-  Source:
-    Tx:     435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
-    Output #1
-    Script: 59277a0100003323322333222333222323322323...
+    Script: 5927900100003323322333222333222323322323...
 
 
 Outputs:
   ---- Output 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Ada:      Lovelace:  99984831
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  -
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  -
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    Ada:      Lovelace:  99984851
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  -
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Ada:      Lovelace:  99984837
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  -
->>>>>>> Fix tests in packages
-=======
-    Ada:      Lovelace:  99984831
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  -
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Ada:      Lovelace:  99984807
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  -
 
   ---- Output 1 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
     Ada:      -
 
   ---- Output 2 ----
-  Destination:  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
-=======
-=======
->>>>>>> Fix plutus-use-cases test outputs
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-    Ada:      -
-
-  ---- Output 2 ----
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    1
-    Ada:      -
-
-  ---- Output 2 ----
-  Destination:  Script: 7fb3e84d94d7717d314b8ebb0573557d6c4f47ca6679520b24e9c57e
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
-    Ada:      -
-
-  ---- Output 2 ----
-  Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
->>>>>>> Fix tests in packages
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-    Ada:      -
-
-  ---- Output 2 ----
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+  Destination:  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  8
 
@@ -439,30 +222,8 @@ Outputs:
 Balances Carried Forward:
   PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Ada:      Lovelace:  99984831
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    Ada:      Lovelace:  99984851
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    1
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Ada:      Lovelace:  99984837
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
->>>>>>> Fix tests in packages
-=======
-    Ada:      Lovelace:  99984831
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Ada:      Lovelace:  99984807
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
 
   PubKeyHash: 3c88c96ed5ab14b16a32771bcfcb49928a5557fc... (Wallet 10)
   Value:
@@ -500,153 +261,34 @@ Balances Carried Forward:
   Value:
     Ada:      Lovelace:  100000000
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-=======
-  Script: 7fb3e84d94d7717d314b8ebb0573557d6c4f47ca6679520b24e9c57e
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
->>>>>>> Fix tests in packages
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  8
 
 ==== Slot #3, Tx #0 ====
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-TxId:       dc0b1af42ad9651014d4bf4b1494d4156f6190a6483130a403daa1d23f3f0b2e
+TxId:       5817f91add26b017016bf9c9e393abe6334f8d7630ef64442b01b9e38bd12e80
 Fee:        Ada:      Lovelace:  10
 Mint:       -
 Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840217662004b12a1529971ab49481e12837319...
-=======
-=======
->>>>>>> Fix plutus-use-cases test outputs
-TxId:       6b5fe4b8aa5a7b2bb158efd9c40afcc0d539d76f6720e51b7eed133f9a87e052
-Fee:        Ada:      Lovelace:  10
-Mint:       -
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840dbc68007821488aac89fa23b511853059b47...
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-TxId:       1f6b0779e6a6bd9372e18fece7f372b94410a9040421396d623247910e7d8a13
-Fee:        Ada:      Lovelace:  10
-Mint:       -
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 584065cc08eb1b8173f43ea7329e2bfe1af0a75c...
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-TxId:       0f1f120b22a47cb7417f37b0799dc74d8111498e99835f4c551fb67fb3ba0a40
-Fee:        Ada:      Lovelace:  10
-Mint:       -
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 584093c9df1fe2544f48ea15290832def9bc71f6...
->>>>>>> Fix tests in packages
-=======
-TxId:       6b5fe4b8aa5a7b2bb158efd9c40afcc0d539d76f6720e51b7eed133f9a87e052
-Fee:        Ada:      Lovelace:  10
-Mint:       -
-Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
-              Signature: 5840dbc68007821488aac89fa23b511853059b47...
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+              Signature: 58402a9ba281dc65071c7f25248c6c77261a5507...
 Inputs:
   ---- Input 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Ada:      Lovelace:  99984831
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  -
+    Ada:      Lovelace:  99984807
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  -
   Source:
-    Tx:     9acfbf5be298da6cf06317254d5e0308e6dab2cade4611554a13dd5df3e1a598
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  -
-  Source:
-    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    Ada:      Lovelace:  99984851
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  -
-  Source:
-    Tx:     283afcf057944a8f4f450c0ea57f0484c9e3b23f73d6d8d3d6bbfc1b9d80f282
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Ada:      Lovelace:  99984837
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  -
-  Source:
-    Tx:     24fbbb9ae2f1385c04186e072537af27e3fac4e568a402f68c23a4de062bdca9
->>>>>>> Fix tests in packages
-=======
-    Ada:      Lovelace:  99984831
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  -
-  Source:
-    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Tx:     29cc2130691984dcafb6b82aa2a0fc29f2d2bbb14dc1b6a9da298e1c5abf7ffb
     Output #0
 
 
   ---- Input 1 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
     Ada:      -
   Source:
-    Tx:     9acfbf5be298da6cf06317254d5e0308e6dab2cade4611554a13dd5df3e1a598
-=======
-=======
->>>>>>> Fix plutus-use-cases test outputs
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-    Ada:      -
-  Source:
-    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    1
-    Ada:      -
-  Source:
-    Tx:     283afcf057944a8f4f450c0ea57f0484c9e3b23f73d6d8d3d6bbfc1b9d80f282
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
-    Ada:      -
-  Source:
-    Tx:     24fbbb9ae2f1385c04186e072537af27e3fac4e568a402f68c23a4de062bdca9
->>>>>>> Fix tests in packages
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-    Ada:      -
-  Source:
-    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Tx:     29cc2130691984dcafb6b82aa2a0fc29f2d2bbb14dc1b6a9da298e1c5abf7ffb
     Output #1
 
 
@@ -655,83 +297,20 @@ Outputs:
   ---- Output 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Ada:      Lovelace:  99984821
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    0
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    Ada:      Lovelace:  99984841
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    0
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Ada:      Lovelace:  99984827
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
->>>>>>> Fix tests in packages
-=======
-    Ada:      Lovelace:  99984821
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Ada:      Lovelace:  99984797
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    0
 
   ---- Output 1 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-=======
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    1
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
->>>>>>> Fix tests in packages
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
 
 
 Balances Carried Forward:
   PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Ada:      Lovelace:  99984821
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    0
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    Ada:      Lovelace:  99984841
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    0
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Ada:      Lovelace:  99984827
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
->>>>>>> Fix tests in packages
-=======
-    Ada:      Lovelace:  99984821
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Ada:      Lovelace:  99984797
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    0
 
   PubKeyHash: 3c88c96ed5ab14b16a32771bcfcb49928a5557fc... (Wallet 10)
   Value:
@@ -756,26 +335,7 @@ Balances Carried Forward:
   PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
     Ada:      Lovelace:  100000000
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-=======
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    1
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
->>>>>>> Fix tests in packages
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
 
   PubKeyHash: b1fd7c427a17e57c112473449d8b237484c5ebf6... (Wallet 7)
   Value:
@@ -789,72 +349,16 @@ Balances Carried Forward:
   Value:
     Ada:      Lovelace:  100000000
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-=======
-  Script: 7fb3e84d94d7717d314b8ebb0573557d6c4f47ca6679520b24e9c57e
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
->>>>>>> Fix tests in packages
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  8
 
 ==== Slot #4, Tx #0 ====
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-TxId:       254d616254f5e82fa7a7bce8530d58312995bef4af1466f751f9eaf686cf592f
-Fee:        Ada:      Lovelace:  15151
-Mint:       bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    0
+TxId:       3cd6860a063beae506dbc5c87403d253c7a98c7c0506ed8abdd52843b1ed4a6b
+Fee:        Ada:      Lovelace:  15175
+Mint:       5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    0
 Signatures  PubKey: 3d4017c3e843895a92b70aa74d1b7ebc9c982ccf...
-              Signature: 58400f1f1ebb88bad400bd862e7ac463d29e6432...
-=======
-=======
->>>>>>> Fix plutus-use-cases test outputs
-TxId:       34c31adae812320fd8b0b00c09ef5469323fd071bcf17be7b417ea8f9a98721c
-Fee:        Ada:      Lovelace:  15151
-Mint:       e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
-Signatures  PubKey: 3d4017c3e843895a92b70aa74d1b7ebc9c982ccf...
-              Signature: 58405b6cbeb045beaa3604aa687f248f6dadbaf6...
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-TxId:       52e4b8d682fe6c28a9300ebe4cb2d5405c9200e0274caa1598d4a71f63481ff9
-Fee:        Ada:      Lovelace:  15131
-Mint:       34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    0
-Signatures  PubKey: 3d4017c3e843895a92b70aa74d1b7ebc9c982ccf...
-              Signature: 5840f4b6ca9e3955795401ba5e602fb244aa7b7f...
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-TxId:       ebb4cd7e92d18dd97fd735d409795f8dcfb750808751c10c2472acc73832e957
-Fee:        Ada:      Lovelace:  15145
-Mint:       0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
-Signatures  PubKey: 3d4017c3e843895a92b70aa74d1b7ebc9c982ccf...
-              Signature: 5840a77abe3393aed0e2811d6ebf313f8d8d2b54...
->>>>>>> Fix tests in packages
-=======
-TxId:       34c31adae812320fd8b0b00c09ef5469323fd071bcf17be7b417ea8f9a98721c
-Fee:        Ada:      Lovelace:  15151
-Mint:       e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
-Signatures  PubKey: 3d4017c3e843895a92b70aa74d1b7ebc9c982ccf...
-              Signature: 58405b6cbeb045beaa3604aa687f248f6dadbaf6...
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+              Signature: 5840b7cfa4522b675c0b847ceda037ce6a8ef1da...
 Inputs:
   ---- Input 0 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
@@ -866,148 +370,39 @@ Inputs:
 
 
   ---- Input 1 ----
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Destination:  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
+  Destination:  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  8
   Source:
-    Tx:     9acfbf5be298da6cf06317254d5e0308e6dab2cade4611554a13dd5df3e1a598
-=======
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-  Value:
-<<<<<<< HEAD
-    Ada:      Lovelace:  8
-  Source:
-    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
+    Tx:     29cc2130691984dcafb6b82aa2a0fc29f2d2bbb14dc1b6a9da298e1c5abf7ffb
     Output #2
-    Script: 59277a0100003323322333222333222323322323...
-
-  ---- Input 2 ----
-=======
->>>>>>> Fix tests in packages
-  Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
-=======
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
-  Value:
-    Ada:      Lovelace:  8
-  Source:
-    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
-    Output #2
-    Script: 59277a0100003323322333222333222323322323...
+    Script: 5927900100003323322333222333222323322323...
 
   ---- Input 2 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
   Source:
-    Tx:     dc0b1af42ad9651014d4bf4b1494d4156f6190a6483130a403daa1d23f3f0b2e
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-  Source:
-<<<<<<< HEAD
-    Tx:     6b5fe4b8aa5a7b2bb158efd9c40afcc0d539d76f6720e51b7eed133f9a87e052
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
+    Tx:     5817f91add26b017016bf9c9e393abe6334f8d7630ef64442b01b9e38bd12e80
     Output #1
 
-=======
-    Tx:     283afcf057944a8f4f450c0ea57f0484c9e3b23f73d6d8d3d6bbfc1b9d80f282
-=======
-    Ada:      Lovelace:  8
-  Source:
-    Tx:     24fbbb9ae2f1385c04186e072537af27e3fac4e568a402f68c23a4de062bdca9
->>>>>>> Fix tests in packages
-    Output #2
-    Script: 59276c0100003323322333222333222323322323...
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-  Source:
-    Tx:     6b5fe4b8aa5a7b2bb158efd9c40afcc0d539d76f6720e51b7eed133f9a87e052
-    Output #1
-
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
 
 Outputs:
   ---- Output 0 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Ada:      Lovelace:  99984852
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    0
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    Ada:      Lovelace:  99984872
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    0
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Ada:      Lovelace:  99984858
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
->>>>>>> Fix tests in packages
-=======
-    Ada:      Lovelace:  99984852
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Ada:      Lovelace:  99984828
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    0
 
   ---- Output 1 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
     Ada:      -
 
   ---- Output 2 ----
-  Destination:  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
-=======
-=======
->>>>>>> Fix plutus-use-cases test outputs
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-    Ada:      -
-
-  ---- Output 2 ----
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    1
-    Ada:      -
-
-  ---- Output 2 ----
-  Destination:  Script: 7fb3e84d94d7717d314b8ebb0573557d6c4f47ca6679520b24e9c57e
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
-    Ada:      -
-
-  ---- Output 2 ----
-  Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
->>>>>>> Fix tests in packages
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-    Ada:      -
-
-  ---- Output 2 ----
-  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+  Destination:  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  5
 
@@ -1015,30 +410,8 @@ Outputs:
 Balances Carried Forward:
   PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Ada:      Lovelace:  99984821
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    0
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    Ada:      Lovelace:  99984841
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    0
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Ada:      Lovelace:  99984827
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
->>>>>>> Fix tests in packages
-=======
-    Ada:      Lovelace:  99984821
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Ada:      Lovelace:  99984797
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    0
 
   PubKeyHash: 3c88c96ed5ab14b16a32771bcfcb49928a5557fc... (Wallet 10)
   Value:
@@ -1062,30 +435,8 @@ Balances Carried Forward:
 
   PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    Ada:      Lovelace:  99984852
-<<<<<<< HEAD
-    bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
-=======
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
-<<<<<<< HEAD
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-=======
-    Ada:      Lovelace:  99984872
-    34e97f4300fcea807599d436c24f1e1dc9895fbb2f2963f64c0abfba:  guess:    1
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-    Ada:      Lovelace:  99984858
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
->>>>>>> Fix tests in packages
-=======
-    Ada:      Lovelace:  99984852
-    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+    Ada:      Lovelace:  99984828
+    5e9dcb8b792a31696c48c4be2d6cea8089ede296c0c762458105d415:  guess:    1
 
   PubKeyHash: b1fd7c427a17e57c112473449d8b237484c5ebf6... (Wallet 7)
   Value:
@@ -1099,25 +450,6 @@ Balances Carried Forward:
   Value:
     Ada:      Lovelace:  100000000
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Add opaque ByteString type to support literal ByteStrings.
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
-=======
-  Script: 7fb3e84d94d7717d314b8ebb0573557d6c4f47ca6679520b24e9c57e
->>>>>>> Fix plutus-use-cases test outputs
->>>>>>> Fix plutus-use-cases test outputs
-=======
-  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
->>>>>>> Fix tests in packages
-=======
-  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
->>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
+  Script: 42b7137cfdca84a204fad7a28c9535d6f2a68e2beabb6f2d25092157
   Value:
     Ada:      Lovelace:  5

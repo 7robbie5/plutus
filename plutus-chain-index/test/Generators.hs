@@ -66,7 +66,7 @@ genTxOutRef :: MonadGen m => m TxOutRef
 genTxOutRef =  TxOutRef <$> genTxId <*> Gen.integral (Range.linear 0 50)
 
 genBlockId :: MonadGen m => m BlockId
-genBlockId = BlockId . PlutusTx.fromHaskellByteString <$> Gen.bytes (Range.singleton 32)
+genBlockId = BlockId <$> Gen.bytes (Range.singleton 32)
 
 genSlot :: MonadGen m => m Slot
 genSlot = Slot <$> Gen.integral (Range.linear 0 100000000)
@@ -93,7 +93,7 @@ genStateTip :: UtxoGenState -> Tip
 genStateTip UtxoGenState{_uxUtxoSet, _uxNumTransactions, _uxNumBlocks} =
     Tip
         { tipSlot    = fromIntegral _uxNumBlocks
-        , tipBlockId = BlockId $ PlutusTx.fromHaskellByteString $ BSL.toStrict $ serialise _uxNumBlocks -- TODO: Incl. hash of utxo set!
+        , tipBlockId = BlockId $ BSL.toStrict $ serialise _uxNumBlocks -- TODO: Incl. hash of utxo set!
         , tipBlockNo = _uxNumBlocks
         }
 

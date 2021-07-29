@@ -132,17 +132,17 @@ infrequently (I believe).
 -}
 instance Eq Script where
     {-# INLINABLE (==) #-}
-    a == b = BSL.toStrict (serialise a) == BSL.toStrict (serialise b)
+    a == b = Builtins.fromHaskellByteString (BSL.toStrict (serialise a)) == Builtins.fromHaskellByteString (BSL.toStrict (serialise b))
 
 instance Haskell.Eq Script where
-    a == b = BSL.toStrict (serialise a) == BSL.toStrict (serialise b)
+    a == b = Builtins.fromHaskellByteString (BSL.toStrict (serialise a)) == Builtins.fromHaskellByteString (BSL.toStrict (serialise b))
 
 instance Ord Script where
     {-# INLINABLE compare #-}
-    a `compare` b = BSL.toStrict (serialise a) `compare` BSL.toStrict (serialise b)
+    a `compare` b = Builtins.fromHaskellByteString (BSL.toStrict (serialise a)) `compare` Builtins.fromHaskellByteString (BSL.toStrict (serialise b))
 
 instance Haskell.Ord Script where
-    a `compare` b = BSL.toStrict (serialise a) `compare` BSL.toStrict (serialise b)
+    a `compare` b = Builtins.fromHaskellByteString (BSL.toStrict (serialise a)) `compare` Builtins.fromHaskellByteString (BSL.toStrict (serialise b))
 
 instance Haskell.Show Script where
     showsPrec _ _ = Haskell.showString "<Script>"

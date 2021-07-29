@@ -12,20 +12,31 @@ module Plutus.ChainIndex.Types(
     , Tip(..)
     ) where
 
-import           Data.Aeson       (FromJSON, ToJSON)
-import           Data.Default     (Default (..))
-import           Data.Set         (Set)
-import qualified Data.Set         as Set
-import           GHC.Generics     (Generic)
-import           Ledger.Bytes     (LedgerBytes (..))
-import           Ledger.Slot      (Slot)
-import           Numeric.Natural  (Natural)
-import qualified PlutusTx.Prelude as PlutusTx
+import           Data.Aeson        (FromJSON (..), ToJSON (..))
+import qualified Data.Aeson        as JSON
+import qualified Data.Aeson.Extras as JSON
+import qualified Data.ByteString   as BS
+import           Data.Default      (Default (..))
+import           Data.Set          (Set)
+import qualified Data.Set          as Set
+import qualified Data.Text         as Text
+import           GHC.Generics      (Generic)
+import           Ledger.Orphans    ()
+import           Ledger.Slot       (Slot)
+import           Numeric.Natural   (Natural)
 
 -- | Block identifier (usually a hash)
-newtype BlockId = BlockId { getBlockId :: PlutusTx.BuiltinByteString }
+newtype BlockId = BlockId { getBlockId :: BS.ByteString }
     deriving stock (Eq, Ord, Generic)
-    deriving (ToJSON, FromJSON,Show) via LedgerBytes
+
+instance Show BlockId where
+    show = Text.unpack . JSON.encodeByteString . getBlockId
+
+instance ToJSON BlockId where
+    toJSON = JSON.String . JSON.encodeByteString . getBlockId
+
+instance FromJSON BlockId where
+    parseJSON v = BlockId <$> JSON.decodeByteString v
 
 newtype PageSize = PageSize { getPageSize :: Natural }
     deriving stock (Eq, Ord, Show, Generic)

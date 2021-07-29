@@ -357,6 +357,7 @@ defineBuiltinTypes = do
     defineBuiltinType ''Builtins.BuiltinBool $ PLC.toTypeAst $ Proxy @Bool
     defineBuiltinType ''Builtins.BuiltinUnit $ PLC.toTypeAst $ Proxy @()
     defineBuiltinType ''Builtins.BuiltinString $ PLC.toTypeAst $ Proxy @String
+    defineBuiltinType ''Builtins.BuiltinByteString $ PLC.toTypeAst $ Proxy @BS.ByteString
     defineBuiltinType ''Char $ PLC.toTypeAst $ Proxy @Char
     defineBuiltinType ''Builtins.BuiltinData $ PLC.toTypeAst $ Proxy @PLC.Data
     defineBuiltinType ''Builtins.BuiltinPair $ PLC.TyBuiltin () (PLC.SomeTypeIn PLC.DefaultUniProtoPair)

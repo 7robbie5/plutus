@@ -34,6 +34,7 @@ module Plutus.Contracts.Governance (
 import           Control.Lens                 (makeClassyPrisms, review)
 import           Control.Monad
 import           Data.Aeson                   (FromJSON, ToJSON)
+import           Data.ByteString              (ByteString)
 import           Data.Semigroup               (Sum (..))
 import           Data.String                  (fromString)
 import           Data.Text                    (Text)
@@ -97,7 +98,7 @@ data GovInput
 -- * @new-law@ to create a new law and distribute voting tokens
 -- * @add-vote@ to vote on a proposal with the name of the voting token and a boolean to vote in favor or against.
 type Schema =
-    Endpoint "new-law" BuiltinByteString
+    Endpoint "new-law" ByteString
         .\/ Endpoint "add-vote" (TokenName, Bool)
 
 -- | The governace contract parameters.
@@ -199,7 +200,7 @@ contract params = forever $ mapError (review _GovError) endpoints where
 
     initLaw = endpoint @"new-law" $ \bsLaw -> do
         let mph = Scripts.forwardingMintingPolicyHash (typedValidator params)
-        void $ SM.runInitialise theClient (GovState bsLaw mph Nothing) mempty
+        void $ SM.runInitialise theClient (GovState (fromHaskellByteString bsLaw) mph Nothing) mempty
         let tokens = Haskell.zipWith (const (mkTokenName (baseTokenName params))) (initialHolders params) [1..]
         void $ SM.runStep theClient $ MintTokens tokens
 

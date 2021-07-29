@@ -76,12 +76,12 @@ instance ToBuiltin () BuiltinUnit where
     {-# INLINABLE toBuiltin #-}
     toBuiltin x = case x of () -> unitval
 
-instance FromBuiltin ByteString ByteString where
+instance FromBuiltin BuiltinByteString ByteString where
     {-# INLINABLE fromBuiltin #-}
-    fromBuiltin = id
-instance ToBuiltin ByteString ByteString where
+    fromBuiltin (BuiltinByteString b) = b
+instance ToBuiltin ByteString BuiltinByteString where
     {-# INLINABLE toBuiltin #-}
-    toBuiltin = id
+    toBuiltin = BuiltinByteString
 
 instance FromBuiltin BuiltinChar Char where
     {-# INLINABLE fromBuiltin #-}

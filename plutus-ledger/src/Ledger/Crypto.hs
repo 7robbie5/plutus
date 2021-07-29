@@ -32,7 +32,6 @@ import           Data.Either.Extras      (unsafeFromEither)
 import           Plutus.V1.Ledger.Api
 import qualified Plutus.V1.Ledger.Bytes  as KB
 import           Plutus.V1.Ledger.Crypto as Export
-import           Plutus.V1.Ledger.TxId
 
 -- | Compute the hash of a public key.
 pubKeyHash :: PubKey -> PubKeyHash

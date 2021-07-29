@@ -69,7 +69,7 @@ import           Data.ByteString            as BS
 import           Prelude                    hiding (String, error)
 
 import           PlutusTx.Builtins.Class
-import           PlutusTx.Builtins.Internal (BuiltinByteString, BuiltinData, BuiltinString)
+import           PlutusTx.Builtins.Internal (BuiltinByteString (..), BuiltinData, BuiltinString)
 import qualified PlutusTx.Builtins.Internal as BI
 
 import           Prelude                    hiding (String, error)
@@ -81,7 +81,7 @@ fromHaskellByteString = BI.BuiltinByteString
 
 {-# INLINABLE toHaskellByteString #-}
 toHaskellByteString :: BuiltinByteString -> BS.ByteString
-toHaskellByteString = BI.unBuiltinByteString
+toHaskellByteString (BI.BuiltinByteString b) = b
 
 {-# INLINABLE concatenate #-}
 -- | Concatenates two 'ByteString's.
@@ -264,8 +264,8 @@ mkI = BI.mkI
 
 {-# INLINABLE mkB #-}
 -- | Constructs a 'BuiltinData' value with the @B@ constructor.
-mkB :: ByteString -> BuiltinData
-mkB = BI.mkB
+mkB :: BuiltinByteString -> BuiltinData
+mkB (BuiltinByteString b) = BI.mkB b
 
 {-# INLINABLE unsafeDataAsConstr #-}
 -- | Deconstructs a 'BuiltinData' as a @Constr@, or fails if it is not one.
@@ -289,8 +289,8 @@ unsafeDataAsI d = fromBuiltin (BI.unsafeDataAsI d)
 
 {-# INLINABLE unsafeDataAsB #-}
 -- | Deconstructs a 'BuiltinData' as a @B@, or fails if it is not one.
-unsafeDataAsB :: BuiltinData -> ByteString
-unsafeDataAsB d = fromBuiltin (BI.unsafeDataAsB d)
+unsafeDataAsB :: BuiltinData -> BuiltinByteString
+unsafeDataAsB d = BuiltinByteString (BI.unsafeDataAsB d)
 
 {-# INLINABLE equalsData #-}
 -- | Check if two 'BuiltinData's are equal.
@@ -306,7 +306,7 @@ matchData
     -> ([(BuiltinData, BuiltinData)] -> r)
     -> ([BuiltinData] -> r)
     -> (Integer -> r)
-    -> (BS.ByteString -> r)
+    -> (BuiltinByteString -> r)
     -> r
 matchData d constrCase mapCase listCase iCase bCase =
    chooseData
@@ -327,7 +327,7 @@ matchData'
     -> (BI.BuiltinList (BI.BuiltinPair BuiltinData BuiltinData) -> r)
     -> (BI.BuiltinList BuiltinData -> r)
     -> (Integer -> r)
-    -> (BS.ByteString -> r)
+    -> (BuiltinByteString -> r)
     -> r
 matchData' d constrCase mapCase listCase iCase bCase =
    chooseData

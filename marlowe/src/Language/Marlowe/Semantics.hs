@@ -108,20 +108,16 @@ instance Haskell.Show Party where
 type AccountId = Party
 type Timeout = Slot
 type Money = Val.Value
+type ChoiceName = BuiltinByteString
 type ChosenNum = Integer
 type SlotInterval = (Slot, Slot)
 type Accounts = Map (AccountId, Token) Integer
-
-newtype ChoiceName = ChoiceName { unChoiceName :: BuiltinByteString }
-  deriving (IsString, Haskell.Show, Pretty) via TokenName
-  deriving stock (Generic)
-  deriving newtype (Haskell.Eq, Haskell.Ord, Eq)
 
 -- * Data Types
 {-| Choices – of integers – are identified by ChoiceId
     which combines a name for the choice with the Party who had made the choice.
 -}
-data ChoiceId = ChoiceId ChoiceName Party
+data ChoiceId = ChoiceId BuiltinByteString Party
   deriving stock (Haskell.Show,Generic,Haskell.Eq,Haskell.Ord)
   deriving anyclass (Pretty)
 
@@ -833,12 +829,12 @@ instance ToJSON Party where
 
 instance FromJSON ChoiceId where
   parseJSON = withObject "ChoiceId" (\v ->
-       ChoiceId <$> (ChoiceName . fromHaskellByteString . Text.encodeUtf8 <$> (v .: "choice_name"))
+       ChoiceId <$> (fromHaskellByteString . Text.encodeUtf8 <$> (v .: "choice_name"))
                 <*> (v .: "choice_owner")
                                     )
 
 instance ToJSON ChoiceId where
-  toJSON (ChoiceId name party) = object [ "choice_name" .= (JSON.String $ Text.decodeUtf8 $ toHaskellByteString $ unChoiceName name)
+  toJSON (ChoiceId name party) = object [ "choice_name" .= (JSON.String $ Text.decodeUtf8 $ toHaskellByteString name)
                                         , "choice_owner" .= party
                                         ]
 
@@ -1301,8 +1297,6 @@ instance Eq State where
 
 
 -- Lifting data types to Plutus Core
-makeLift ''ChoiceName
-makeIsDataIndexed ''ChoiceName [('ChoiceName,0)]
 makeLift ''Party
 makeIsDataIndexed ''Party [('PK,0),('Role,1)]
 makeLift ''ChoiceId
