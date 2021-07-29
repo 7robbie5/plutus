@@ -104,6 +104,7 @@ Balances Carried Forward:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 TxId:       7df7d70bdf31f813b75009d43a4dd638b106734e1ace07b99f2622418e9a3a7a
 Fee:        Ada:      Lovelace:  10
 Mint:       -
@@ -135,6 +136,13 @@ Mint:       -
 Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
               Signature: 5840cda91e28c83efd66ce2f6aeb182b244ac83f...
 >>>>>>> Fix tests in packages
+=======
+TxId:       435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
+Fee:        Ada:      Lovelace:  10
+Mint:       -
+Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
+              Signature: 5840ae6965a318c682d98da46cb6d2d60119525b...
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 Inputs:
   ---- Input 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
@@ -156,6 +164,7 @@ Outputs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Destination:  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
 =======
   Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
@@ -169,6 +178,9 @@ Outputs:
 =======
   Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
 >>>>>>> Fix tests in packages
+=======
+  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
     Ada:      Lovelace:  8
 
@@ -217,6 +229,7 @@ Balances Carried Forward:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
 =======
   Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
@@ -230,10 +243,14 @@ Balances Carried Forward:
 =======
   Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
 >>>>>>> Fix tests in packages
+=======
+  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
     Ada:      Lovelace:  8
 
 ==== Slot #2, Tx #0 ====
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -268,12 +285,20 @@ Mint:       0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:   
 Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
               Signature: 58400080c729d552884b49dbce0cf5954dabe1df...
 >>>>>>> Fix tests in packages
+=======
+TxId:       204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
+Fee:        Ada:      Lovelace:  15151
+Mint:       e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
+              Signature: 5840cbb2f9d93c99535d88b60668e0f8099ef187...
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 Inputs:
   ---- Input 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
     Ada:      Lovelace:  99999982
   Source:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -290,10 +315,14 @@ Inputs:
 =======
     Tx:     5cc7c664675102b4cc9903305db5425084e03888b73518ea67a9214ddc8b909f
 >>>>>>> Fix tests in packages
+=======
+    Tx:     435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
     Output #0
 
 
   ---- Input 1 ----
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -318,18 +347,22 @@ Inputs:
 =======
   Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
 >>>>>>> Fix tests in packages
+=======
+  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
     Ada:      Lovelace:  8
   Source:
-    Tx:     5cc7c664675102b4cc9903305db5425084e03888b73518ea67a9214ddc8b909f
+    Tx:     435f819f0094b65c93416f3528fd437582be9c355dc334bcefd2d1bdd7c97ab0
     Output #1
-    Script: 59276c0100003323322333222333222323322323...
+    Script: 59277a0100003323322333222333222323322323...
 
 
 Outputs:
   ---- Output 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Ada:      Lovelace:  99984831
@@ -349,10 +382,15 @@ Outputs:
     Ada:      Lovelace:  99984837
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  -
 >>>>>>> Fix tests in packages
+=======
+    Ada:      Lovelace:  99984831
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  -
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
   ---- Output 1 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -387,6 +425,13 @@ Outputs:
   ---- Output 2 ----
   Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
 >>>>>>> Fix tests in packages
+=======
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+    Ada:      -
+
+  ---- Output 2 ----
+  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
     Ada:      Lovelace:  8
 
@@ -394,6 +439,7 @@ Outputs:
 Balances Carried Forward:
   PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Ada:      Lovelace:  99984831
@@ -413,6 +459,10 @@ Balances Carried Forward:
     Ada:      Lovelace:  99984837
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
 >>>>>>> Fix tests in packages
+=======
+    Ada:      Lovelace:  99984831
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
   PubKeyHash: 3c88c96ed5ab14b16a32771bcfcb49928a5557fc... (Wallet 10)
   Value:
@@ -453,6 +503,7 @@ Balances Carried Forward:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
 =======
   Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
@@ -466,10 +517,14 @@ Balances Carried Forward:
 =======
   Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
 >>>>>>> Fix tests in packages
+=======
+  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
     Ada:      Lovelace:  8
 
 ==== Slot #3, Tx #0 ====
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -504,10 +559,18 @@ Mint:       -
 Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
               Signature: 584093c9df1fe2544f48ea15290832def9bc71f6...
 >>>>>>> Fix tests in packages
+=======
+TxId:       6b5fe4b8aa5a7b2bb158efd9c40afcc0d539d76f6720e51b7eed133f9a87e052
+Fee:        Ada:      Lovelace:  10
+Mint:       -
+Signatures  PubKey: d75a980182b10ab7d54bfed3c964073a0ee172f3...
+              Signature: 5840dbc68007821488aac89fa23b511853059b47...
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 Inputs:
   ---- Input 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Ada:      Lovelace:  99984831
@@ -535,12 +598,19 @@ Inputs:
   Source:
     Tx:     24fbbb9ae2f1385c04186e072537af27e3fac4e568a402f68c23a4de062bdca9
 >>>>>>> Fix tests in packages
+=======
+    Ada:      Lovelace:  99984831
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  -
+  Source:
+    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
     Output #0
 
 
   ---- Input 1 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -571,6 +641,12 @@ Inputs:
   Source:
     Tx:     24fbbb9ae2f1385c04186e072537af27e3fac4e568a402f68c23a4de062bdca9
 >>>>>>> Fix tests in packages
+=======
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+    Ada:      -
+  Source:
+    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
     Output #1
 
 
@@ -579,6 +655,7 @@ Outputs:
   ---- Output 0 ----
   Destination:  PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Ada:      Lovelace:  99984821
@@ -598,10 +675,15 @@ Outputs:
     Ada:      Lovelace:  99984827
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
 >>>>>>> Fix tests in packages
+=======
+    Ada:      Lovelace:  99984821
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
   ---- Output 1 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -618,11 +700,15 @@ Outputs:
 =======
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
 >>>>>>> Fix tests in packages
+=======
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
 
 Balances Carried Forward:
   PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Ada:      Lovelace:  99984821
@@ -642,6 +728,10 @@ Balances Carried Forward:
     Ada:      Lovelace:  99984827
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
 >>>>>>> Fix tests in packages
+=======
+    Ada:      Lovelace:  99984821
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
   PubKeyHash: 3c88c96ed5ab14b16a32771bcfcb49928a5557fc... (Wallet 10)
   Value:
@@ -669,6 +759,7 @@ Balances Carried Forward:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
 =======
     e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
@@ -682,6 +773,9 @@ Balances Carried Forward:
 =======
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
 >>>>>>> Fix tests in packages
+=======
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
   PubKeyHash: b1fd7c427a17e57c112473449d8b237484c5ebf6... (Wallet 7)
   Value:
@@ -698,6 +792,7 @@ Balances Carried Forward:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
 =======
   Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
@@ -711,10 +806,14 @@ Balances Carried Forward:
 =======
   Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
 >>>>>>> Fix tests in packages
+=======
+  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
     Ada:      Lovelace:  8
 
 ==== Slot #4, Tx #0 ====
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -749,6 +848,13 @@ Mint:       0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:   
 Signatures  PubKey: 3d4017c3e843895a92b70aa74d1b7ebc9c982ccf...
               Signature: 5840a77abe3393aed0e2811d6ebf313f8d8d2b54...
 >>>>>>> Fix tests in packages
+=======
+TxId:       34c31adae812320fd8b0b00c09ef5469323fd071bcf17be7b417ea8f9a98721c
+Fee:        Ada:      Lovelace:  15151
+Mint:       e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
+Signatures  PubKey: 3d4017c3e843895a92b70aa74d1b7ebc9c982ccf...
+              Signature: 58405b6cbeb045beaa3604aa687f248f6dadbaf6...
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 Inputs:
   ---- Input 0 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
@@ -760,6 +866,7 @@ Inputs:
 
 
   ---- Input 1 ----
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   Destination:  Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
@@ -782,16 +889,20 @@ Inputs:
 =======
 >>>>>>> Fix tests in packages
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
+=======
+  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
-    0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
+    Ada:      Lovelace:  8
   Source:
-    Tx:     0f1f120b22a47cb7417f37b0799dc74d8111498e99835f4c551fb67fb3ba0a40
-    Output #1
-
+    Tx:     204e5d92cf74f6dcc207e948adfcf2eac968b02ec93fa0ba584aebe93c5f2da3
+    Output #2
+    Script: 59277a0100003323322333222333222323322323...
 
   ---- Input 2 ----
-  Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
+  Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
@@ -814,12 +925,20 @@ Inputs:
 >>>>>>> Fix tests in packages
     Output #2
     Script: 59276c0100003323322333222333222323322323...
+=======
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+  Source:
+    Tx:     6b5fe4b8aa5a7b2bb158efd9c40afcc0d539d76f6720e51b7eed133f9a87e052
+    Output #1
+
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
 
 Outputs:
   ---- Output 0 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Ada:      Lovelace:  99984852
@@ -839,10 +958,15 @@ Outputs:
     Ada:      Lovelace:  99984858
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
 >>>>>>> Fix tests in packages
+=======
+    Ada:      Lovelace:  99984852
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
   ---- Output 1 ----
   Destination:  PubKeyHash: 977efb35ab621d39dbeb7274ec7795a34708ff4d... (Wallet 2)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -877,6 +1001,13 @@ Outputs:
   ---- Output 2 ----
   Destination:  Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
 >>>>>>> Fix tests in packages
+=======
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+    Ada:      -
+
+  ---- Output 2 ----
+  Destination:  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
     Ada:      Lovelace:  5
 
@@ -884,6 +1015,7 @@ Outputs:
 Balances Carried Forward:
   PubKeyHash: 35dedd2982a03cf39e7dce03c839994ffdec2ec6... (Wallet 1)
   Value:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     Ada:      Lovelace:  99984821
@@ -903,6 +1035,10 @@ Balances Carried Forward:
     Ada:      Lovelace:  99984827
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    0
 >>>>>>> Fix tests in packages
+=======
+    Ada:      Lovelace:  99984821
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    0
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
   PubKeyHash: 3c88c96ed5ab14b16a32771bcfcb49928a5557fc... (Wallet 10)
   Value:
@@ -928,6 +1064,7 @@ Balances Carried Forward:
   Value:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Ada:      Lovelace:  99984852
 <<<<<<< HEAD
     bb830068abc058f56b1850745e7cea6f4b6a39044f36f8751f435438:  guess:    1
@@ -945,6 +1082,10 @@ Balances Carried Forward:
     Ada:      Lovelace:  99984858
     0022f39e9657b00ed4b87618745fce2396324702f05a58c3087fbe5c:  guess:    1
 >>>>>>> Fix tests in packages
+=======
+    Ada:      Lovelace:  99984852
+    e83d8114acc96eccca1182d39b72b8c327ddd500cdf460c3eae3fc75:  guess:    1
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
 
   PubKeyHash: b1fd7c427a17e57c112473449d8b237484c5ebf6... (Wallet 7)
   Value:
@@ -961,6 +1102,7 @@ Balances Carried Forward:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Script: 7191b7243d09f2dc1363016a57ec7a956d710bfb5d20dc9c2c3f057d
 =======
   Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
@@ -974,5 +1116,8 @@ Balances Carried Forward:
 =======
   Script: b259e37908043598b3bd66131012149b1492c9302d6ccd66b8c5fadc
 >>>>>>> Fix tests in packages
+=======
+  Script: ca279070f518321582bdb2bf267e57d7947e9233ad36149cea729db7
+>>>>>>> Fix cardano-ledger-speacs. Remove useless diffs.
   Value:
     Ada:      Lovelace:  5

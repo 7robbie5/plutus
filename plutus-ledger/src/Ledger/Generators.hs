@@ -49,7 +49,6 @@ import qualified Ledger.Index              as Index
 import qualified Plutus.V1.Ledger.Ada      as Ada
 import qualified Plutus.V1.Ledger.Interval as Interval
 import qualified Plutus.V1.Ledger.Value    as Value
-import qualified PlutusTx.Prelude          as PlutusTx
 
 -- | Attach signatures of all known private keys to a transaction.
 signAll :: Tx -> Tx
@@ -199,7 +198,7 @@ genSizedByteStringExact s =
     in Gen.bytes range
 
 genTokenName :: MonadGen m => m TokenName
-genTokenName = Value.TokenName . PlutusTx.fromHaskellByteString <$> genSizedByteString 32
+genTokenName = Value.tokenName <$> genSizedByteString 32
 
 genValue' :: MonadGen m => Range Integer -> m Value
 genValue' valueRange = do

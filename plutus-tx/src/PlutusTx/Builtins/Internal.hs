@@ -220,19 +220,19 @@ newtype BuiltinString = BuiltinString String
 
 {-# NOINLINE appendString #-}
 appendString :: BuiltinString -> BuiltinString -> BuiltinString
-appendString = mustBeReplaced "appendString"
+appendString (BuiltinString s1) (BuiltinString s2) = BuiltinString (s1 ++ s2)
 
 {-# NOINLINE emptyString #-}
 emptyString :: BuiltinString
-emptyString = mustBeReplaced "emptyString"
+emptyString = BuiltinString ""
 
 {-# NOINLINE charToString #-}
 charToString :: BuiltinChar -> BuiltinString
-charToString = mustBeReplaced "charToString"
+charToString c = BuiltinString $ [c]
 
 {-# NOINLINE equalsString #-}
 equalsString :: BuiltinString -> BuiltinString -> BuiltinBool
-equalsString = mustBeReplaced "equalsString"
+equalsString (BuiltinString s1) (BuiltinString s2) = coerce $ ((==) @String) s1 s2
 
 {-# NOINLINE trace #-}
 trace :: BuiltinString -> BuiltinUnit

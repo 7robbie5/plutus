@@ -116,7 +116,7 @@ currencyMPSHash :: CurrencySymbol -> MintingPolicyHash
 currencyMPSHash (CurrencySymbol h) = MintingPolicyHash h
 
 {-# INLINABLE currencySymbol #-}
--- | Creates `CurrencySymbol` from raw `ByteString`. Shouldn't be used with literals.
+-- | Creates `CurrencySymbol` from raw `ByteString`.
 currencySymbol :: BS.ByteString -> CurrencySymbol
 currencySymbol = CurrencySymbol . PlutusTx.fromHaskellByteString
 
@@ -132,12 +132,12 @@ instance IsString TokenName where
     fromString = fromText . Text.pack
 
 {-# INLINABLE tokenName #-}
--- | Creates `TokenName` from raw `ByteString`. Shouldn't be used with literals.
+-- | Creates `TokenName` from raw `ByteString`.
 tokenName :: BS.ByteString -> TokenName
 tokenName = TokenName . PlutusTx.fromHaskellByteString
 
 fromText :: Text -> TokenName
-fromText = TokenName . PlutusTx.fromHaskellByteString . E.encodeUtf8
+fromText = tokenName . E.encodeUtf8
 
 fromTokenName :: (BS.ByteString -> r) -> (Text -> r) -> TokenName -> r
 fromTokenName handleBytestring handleText (TokenName bs) = either (\_ -> handleBytestring $ PlutusTx.toHaskellByteString bs) handleText $ E.decodeUtf8' (PlutusTx.toHaskellByteString bs)
@@ -176,7 +176,7 @@ instance FromJSON TokenName where
         fromJSONText raw
         where
             fromJSONText t = case Text.take 3 t of
-                "\NUL0x"       -> either Haskell.fail (Haskell.pure . TokenName . PlutusTx.fromHaskellByteString) . JSON.tryDecode . Text.drop 3 $ t
+                "\NUL0x"       -> either Haskell.fail (Haskell.pure . tokenName) . JSON.tryDecode . Text.drop 3 $ t
                 "\NUL\NUL\NUL" -> Haskell.pure . fromText . Text.drop 2 $ t
                 _              -> Haskell.pure . fromText $ t
 

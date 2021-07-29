@@ -141,12 +141,12 @@ instance Render SequenceId where
         "Slot #" <> viaShow slotIndex <> "," <+> "Tx #" <> viaShow txIndex
 
 instance Render CurrencySymbol where
-    render (CurrencySymbol cs) | cs == PlutusTx.emptyByteString = pure "Ada"
+    render (CurrencySymbol "")    = pure "Ada"
     render (CurrencySymbol other) = render other
 
 instance Render TokenName where
-    render (TokenName tn) | tn == PlutusTx.emptyByteString = pure "Lovelace"
-    render t             = pure $ pretty $ Value.toString t
+    render (TokenName "") = pure "Lovelace"
+    render t              = pure $ pretty $ Value.toString t
 
 instance Render PlutusTx.BuiltinByteString where
     render = pure . pretty . JSON.encodeByteString . PlutusTx.toHaskellByteString

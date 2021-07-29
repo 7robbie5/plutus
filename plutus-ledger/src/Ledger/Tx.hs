@@ -32,7 +32,6 @@ import           Ledger.Crypto             (PrivateKey, PubKey, signTx, toPublic
 import           Ledger.Scripts            (datumHash)
 import           Plutus.V1.Ledger.Api
 import           Plutus.V1.Ledger.Tx       as Export
-import           Plutus.V1.Ledger.Value
 
 instance Pretty Tx where
     pretty t@Tx{txInputs, txCollateral, txOutputs, txMint, txFee, txValidRange, txSignatures, txMintScripts, txData} =

@@ -6,11 +6,16 @@ import           Data.Map.Strict            (Map)
 import qualified Data.Map.Strict            as Map
 import           Data.Set                   (Set)
 import qualified Data.Set                   as Set
+import           Data.String
 
 import           Language.Marlowe.Semantics
 import           Ledger.Ada                 (adaSymbol, adaToken)
 import qualified Ledger.Value               as Val
 import qualified PlutusTx.Prelude           as P
+
+instance IsString Party where
+    fromString s = Role (fromString s)
+
 
 ada :: Token
 ada = Token adaSymbol adaToken
